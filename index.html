@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diario personal</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="root">
+    <img src="assets/images/Pikachu-gif.webp">
+    <div id="main-content" class="container">
+        <form id="newEntryForm" class="form" >
+            <label for="creation_date">Fecha</label>
+            <input type="date" name="creation_date" id="creation_date">
+
+            <label for="feeling">¿Como te sientes?</label>
+            <select name="feeling" id="feeling">
+                <option value="HA">Feliz</option>
+                <option value="SA">Triste</option>
+                <option value="AN">Enojado</option>
+                <option value="CO">Confiado</option>
+                <option value="SI">Enfermo</option>
+                <option value="AM">Sorprendido</option>
+            </select>
+
+            <label for="description">Descripcion</label>
+            <input type="text" name="description" id="description">
+
+            <input type="file" name="photo" id="photo">
+
+            <button type="submit">Guardar</button>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
