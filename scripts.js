@@ -15,7 +15,7 @@ function createCard(entry) {
 	p.textContent = `${entry.description}` // End with an ellipses
   
 	const photo = document.createElement('img')
-	photo.src = 'https://journalpractice.herokuapp.com' + entry.photo 
+	photo.src = entry.photo 
   
 	const h2 = document.createElement('h2')
 	var feel_text
