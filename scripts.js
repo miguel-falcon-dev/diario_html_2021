@@ -15,7 +15,7 @@ function createCard(entry) {
 	p.textContent = `${entry.description}` // End with an ellipses
   
 	const photo = document.createElement('img')
-	photo.src = 'http://127.0.0.1:8000' + entry.photo 
+	photo.src = 'https://journalpractice.herokuapp.com' + entry.photo 
   
 	const h2 = document.createElement('h2')
 	var feel_text
@@ -53,7 +53,7 @@ function createCard(entry) {
 	card.appendChild(h2)
 }
 
-fetch('http://127.0.0.1:8000/blog/api/').then(function (response)
+fetch('https://journalpractice.herokuapp.com/blog/api/').then(function (response)
 {
     // The API call was successful!
 	if (response.ok) {
@@ -78,7 +78,7 @@ entryForm.addEventListener('submit', function(e){
 
 	const formData = new FormData(this);
 
-	fetch('http://127.0.0.1:8000/blog/api/', {
+	fetch('https://journalpractice.herokuapp.com/blog/api/', {
 		method:'post',
 		body: formData
 	}).then(function (response){
