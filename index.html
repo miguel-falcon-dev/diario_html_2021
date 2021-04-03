@@ -11,29 +11,45 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="root">
-    <img src="assets/images/Pikachu-gif.webp">
-    <div id="main-content" class="container">
+    <div class="titletext">Diario</div>
+    <div class="formcard">
         <form id="newEntryForm" class="form" >
-            <label for="creation_date">Fecha</label>
-            <input type="date" name="creation_date" id="creation_date">
+            <div class="content">
+                <div class="subcontent">
+                    <label for="creation_date">Fecha</label>
+                    <input type="date" name="creation_date" id="creation_date">
+                </div>
+                <div class="subcontent">
+                    <label for="feeling">¿Como te sientes?</label>
+                    <select name="feeling" id="feeling">
+                        <option value="HA">Feliz</option>
+                        <option value="SA">Triste</option>
+                        <option value="AN">Enojado</option>
+                        <option value="CO">Confiado</option>
+                        <option value="SI">Enfermo</option>
+                        <option value="AM">Sorprendido</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="content">
+                <div class="subcontent">
+                    <label for="description">Descripcion</label>
+                    <input type="textarea" name="description" id="description" size="50">
+                </div>
+                <div class="subcontent">
+                    <label for="photo">Agrega una foto: </label>
+                    <input type="file" name="photo" id="photo">
+                </div>
+            </div>
 
-            <label for="feeling">¿Como te sientes?</label>
-            <select name="feeling" id="feeling">
-                <option value="HA">Feliz</option>
-                <option value="SA">Triste</option>
-                <option value="AN">Enojado</option>
-                <option value="CO">Confiado</option>
-                <option value="SI">Enfermo</option>
-                <option value="AM">Sorprendido</option>
-            </select>
-
-            <label for="description">Descripcion</label>
-            <input type="text" name="description" id="description">
-
-            <input type="file" name="photo" id="photo">
-
-            <button type="submit">Guardar</button>
+            <div class="content">
+                <button type="submit">Guardar</button>
+            </div>
         </form>
+    </div>
+    <div id="main-content" class="container">
+        
     </div>
     <script src="scripts.js"></script>
 </body>

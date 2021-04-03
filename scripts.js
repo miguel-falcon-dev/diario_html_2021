@@ -41,7 +41,7 @@ function createCard(entry) {
 		default:
 			feel_text = 'No encontrado'
 	}
-	h2.textContent = feel_text
+	h2.textContent = 'Estado: ' + feel_text
 	
 	// Append the cards to the container element
 	container.appendChild(card)
